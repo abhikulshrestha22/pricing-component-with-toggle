@@ -161,10 +161,31 @@ button {
   display: none;
 }
 
+.attribution{
+  position: relative;
+  bottom: 0;
+  padding: 40;
+  text-align: center;
+}
+
+
+
+.top-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -10;
+}
+
+.bottom-image {
+  display: none;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
 }
+
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -184,11 +205,13 @@ button {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
   }
+
+  .bottom-image {
+    display: inline;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+  }
 }
 
-.attribution{
-  position: relative;
-  bottom: 0;
-  padding: 40;
-  text-align: center;
-}
